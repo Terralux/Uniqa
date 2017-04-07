@@ -1,0 +1,41 @@
+# =============== #
+# Unity generated #
+# =============== #
+Uniqa/[Tt]emp/
+Uniqa/[Oo]bj/
+Uniqa/[Bb]uilds/
+Uniqa/[Ll]ibrary/
+Uniqa/[Ll]ibrary_ANDROID/
+Uniqa/[Ll]ibrary_PC/
+Uniqa/[Ll]ibrary_IOS/
+Uniqa/sysinfo.txt
+Uniqa/UnityVS/
+Uniqa/UnityVS.meta
+Uniqa/LightingData*
+Uniqa/ReflectionProbe*
+Uniqa/Assets/Scenes/Personal Scenes*
+
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+Uniqa/[Ee]xported[Oo]bj/
+Uniqa/*.userprefs
+Uniqa/*.csproj
+Uniqa/*.pidb
+Uniqa/*.suo
+Uniqa/*.sln*
+Uniqa/*.user
+Uniqa/*.unityproj
+Uniqa/*.booproj
+
+# ============
+# OS generated
+# ============
+Uniqa/.DS_Store
+Uniqa/.DS_Store?
+Uniqa/._*
+Uniqa/.Spotlight-V100
+Uniqa/.Trashes
+Uniqa/ehthumbs.db
+Thumbs.db
+Thumbs.db.meta
