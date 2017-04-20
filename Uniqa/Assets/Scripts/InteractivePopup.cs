@@ -5,15 +5,15 @@ using UnityEngine;
 public class InteractivePopup : InteractiveObject {
 
 	public GameObject objectToShow;
-	private PopupMaster pm;
+	//private PopupMaster pm;
 
 	void Awake(){
 		Hide ();
 	}
 
 	void Start(){
-		pm = GameObject.FindGameObjectWithTag ("PopupMaster").GetComponent<PopupMaster> ();
-		pm.OnSelectedAPopup += Hide;
+	//	pm = GameObject.FindGameObjectWithTag ("PopupMaster").GetComponent<PopupMaster> ();
+	//	pm.OnSelectedAPopup += Hide;
 	}
 
 	public void Hide(){
@@ -27,10 +27,10 @@ public class InteractivePopup : InteractiveObject {
 	}
 
 	public override void Initialize (Vector3 targetPosition){
-		if (pm.OnSelectedAPopup != null) {
-			pm.OnSelectedAPopup ();
-		}
-		objectToShow.SetActive (true);
+	//	if (pm.OnSelectedAPopup != null) {
+	//		pm.OnSelectedAPopup ();
+	//	}
+	//	objectToShow.SetActive (true);
 	}
 
 	public override void End (Vector3 targetPosition){

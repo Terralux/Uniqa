@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class InteractionControl : MonoBehaviour {
 
-	private bool interactionIsOn = false;
+	private bool canInteract = false;
 
 	private InteractiveObject io;
 
@@ -20,7 +20,7 @@ public class InteractionControl : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (interactionIsOn) {
+		if (canInteract) {
 			if (Controller.GetHairTriggerDown ()) {
 				io.Initialize (transform.position);
 			}
@@ -36,15 +36,15 @@ public class InteractionControl : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider col){
-		if (col.CompareTag ("Interactive")) {
-			interactionIsOn = true;
+		if (col.gameObject.GetComponent<InteractiveObject>() != null) {
+			canInteract = true;
 			io = col.gameObject.GetComponent<InteractiveObject> ();
 		}
 	}
 
 	void OnTriggerExit(Collider col){
-		if (col.CompareTag ("Interactive")) {
-			interactionIsOn = false;
+		if (col.gameObject.GetComponent<InteractiveObject>() != null) {
+			canInteract = false;
 			io = null;
 		}
 	}

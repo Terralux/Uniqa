@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3674da4c-7fdb-41c8-be26-50b11e5d8376" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="InteractivePopup.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/InteractivePopup.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+              <folding>
+                <marker date="1492338024821" expanded="true" signature="6:78" ph="..." />
+                <marker date="1492338024821" expanded="true" signature="130:791" ph="{...}" />
+                <marker date="1492338024821" expanded="true" signature="207:222" ph="{...}" />
+                <marker date="1492338024821" expanded="true" signature="237:362" ph="{...}" />
+                <marker date="1492338024821" expanded="true" signature="240:359" ph="/* pm = GameObject.FindGameObjectWithTag (&quot;PopupMaster&quot;).GetComponent&lt;PopupMaster&gt; (); ... */" />
+                <marker date="1492338024821" expanded="true" signature="383:421" ph="{...}" />
+                <marker date="1492338024821" expanded="true" signature="424:789" ph="implemented abstract members of InteractiveObject" />
+                <marker date="1492338024821" expanded="true" signature="538:545" ph="{...}" />
+                <marker date="1492338024821" expanded="true" signature="604:717" ph="{...}" />
+                <marker date="1492338024821" expanded="true" signature="607:714" ph="/* if (pm.OnSelectedAPopup != null) { ... */" />
+                <marker date="1492338024821" expanded="true" signature="769:776" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TeleportInputControl.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/TeleportInputControl.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding>
+                <marker date="1492339077132" expanded="true" signature="6:78" ph="..." />
+                <marker date="1492339077132" expanded="true" signature="130:1747" ph="{...}" />
+                <marker date="1492339077132" expanded="true" signature="338:409" ph="{...}" />
+                <marker date="1492339077132" expanded="true" signature="570:839" ph="{...}" />
+                <marker date="1492339077132" expanded="true" signature="681:780" ph="{...}" />
+                <marker date="1492339077132" expanded="true" signature="893:1488" ph="{...}" />
+                <marker date="1492339077132" expanded="true" signature="918:1407" ph="{...}" />
+                <marker date="1492339077132" expanded="true" signature="1069:1403" ph="{...}" />
+                <marker date="1492339077132" expanded="true" signature="1147:1398" ph="{...}" />
+                <marker date="1492339077132" expanded="true" signature="1300:1392" ph="{...}" />
+                <marker date="1492339077132" expanded="true" signature="1508:1745" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InteractiveObject.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/InteractiveObject.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="71" lean-forward="false" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
+              <folding>
+                <marker date="1492339429764" expanded="true" signature="6:78" ph="..." />
+                <marker date="1492339429764" expanded="true" signature="136:640" ph="{...}" />
+                <marker date="1492339429764" expanded="true" signature="142:250" ph="/* Used for initializing an interaction ... */" />
+                <marker date="1492339429764" expanded="true" signature="318:412" ph="/* Used for handling object during interaction ... */" />
+                <marker date="1492339429764" expanded="true" signature="475:583" ph="/* Used for resolving the interaction ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InteractionControl.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/InteractionControl.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+              <folding>
+                <marker date="1492338665667" expanded="true" signature="6:78" ph="..." />
+                <marker date="1492338665667" expanded="true" signature="128:1107" ph="{...}" />
+                <marker date="1492338665667" expanded="true" signature="288:359" ph="{...}" />
+                <marker date="1492338665667" expanded="true" signature="374:433" ph="{...}" />
+                <marker date="1492338665667" expanded="true" signature="488:766" ph="{...}" />
+                <marker date="1492338665667" expanded="true" signature="509:763" ph="{...}" />
+                <marker date="1492338665667" expanded="true" signature="552:598" ph="{...}" />
+                <marker date="1492338665667" expanded="true" signature="635:679" ph="{...}" />
+                <marker date="1492338665667" expanded="true" signature="720:759" ph="{...}" />
+                <marker date="1492338665667" expanded="true" signature="802:958" ph="{...}" />
+                <marker date="1492338665667" expanded="true" signature="868:955" ph="{...}" />
+                <marker date="1492338665667" expanded="true" signature="993:1105" ph="{...}" />
+                <marker date="1492338665667" expanded="true" signature="1059:1102" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InteractiveFollowObject.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/InteractiveFollowObject.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="5" column="34" lean-forward="false" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+              <folding>
+                <marker date="1492340192390" expanded="true" signature="6:100" ph="..." />
+                <marker date="1492340192390" expanded="true" signature="197:1719" ph="{...}" />
+                <marker date="1492340192390" expanded="true" signature="326:365" ph="{...}" />
+                <marker date="1492340192390" expanded="true" signature="393:504" ph="{...}" />
+                <marker date="1492340192390" expanded="true" signature="436:498" ph="{...}" />
+                <marker date="1492340192390" expanded="true" signature="510:1717" ph="implemented abstract members of InteractiveObject" />
+                <marker date="1492340192390" expanded="true" signature="624:778" ph="{...}" />
+                <marker date="1492340192390" expanded="true" signature="659:717" ph="{...}" />
+                <marker date="1492340192390" expanded="true" signature="837:1388" ph="{...}" />
+                <marker date="1492340192390" expanded="true" signature="1040:1219" ph="{...}" />
+                <marker date="1492340192390" expanded="true" signature="1185:1215" ph="{...}" />
+                <marker date="1492340192390" expanded="true" signature="1441:1704" ph="{...}" />
+                <marker date="1492340192390" expanded="true" signature="1625:1664" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/InteractivePopup.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InteractiveMovingElement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SelectionControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TargetSelection.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InteractionControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TeleportInputControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InteractiveObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InteractiveFollowObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ViveSetupScript.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Uniqa (2 projects)" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assembly-CSharp-Editor" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Uniqa (2 projects)" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assembly-CSharp" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assets" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Uniqa (2 projects)" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assembly-CSharp" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assets" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Scripts" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Uniqa (2 projects)" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assembly-CSharp" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Project.Default">
+    <configuration default="true" type="DotNetProject" factoryName=".NET Project">
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <envs />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue=".NET Project.Default" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3674da4c-7fdb-41c8-be26-50b11e5d8376" name="Default" comment="" />
+      <created>1492337942963</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1492337942963</updated>
+      <workItem from="1492337950351" duration="3083000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3083000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Change Signature" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InteractionControl.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+          <folding>
+            <marker date="1492338665667" expanded="true" signature="6:78" ph="..." />
+            <marker date="1492338665667" expanded="true" signature="128:1107" ph="{...}" />
+            <marker date="1492338665667" expanded="true" signature="288:359" ph="{...}" />
+            <marker date="1492338665667" expanded="true" signature="374:433" ph="{...}" />
+            <marker date="1492338665667" expanded="true" signature="488:766" ph="{...}" />
+            <marker date="1492338665667" expanded="true" signature="509:763" ph="{...}" />
+            <marker date="1492338665667" expanded="true" signature="552:598" ph="{...}" />
+            <marker date="1492338665667" expanded="true" signature="635:679" ph="{...}" />
+            <marker date="1492338665667" expanded="true" signature="720:759" ph="{...}" />
+            <marker date="1492338665667" expanded="true" signature="802:958" ph="{...}" />
+            <marker date="1492338665667" expanded="true" signature="868:955" ph="{...}" />
+            <marker date="1492338665667" expanded="true" signature="993:1105" ph="{...}" />
+            <marker date="1492338665667" expanded="true" signature="1059:1102" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InteractiveObject.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="71" lean-forward="false" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
+          <folding>
+            <marker date="1492339429764" expanded="true" signature="6:78" ph="..." />
+            <marker date="1492339429764" expanded="true" signature="136:640" ph="{...}" />
+            <marker date="1492339429764" expanded="true" signature="142:250" ph="/* Used for initializing an interaction ... */" />
+            <marker date="1492339429764" expanded="true" signature="318:412" ph="/* Used for handling object during interaction ... */" />
+            <marker date="1492339429764" expanded="true" signature="475:583" ph="/* Used for resolving the interaction ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InteractiveFollowObject.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="34" lean-forward="false" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+          <folding>
+            <marker date="1492340192390" expanded="true" signature="6:100" ph="..." />
+            <marker date="1492340192390" expanded="true" signature="197:1719" ph="{...}" />
+            <marker date="1492340192390" expanded="true" signature="326:365" ph="{...}" />
+            <marker date="1492340192390" expanded="true" signature="393:504" ph="{...}" />
+            <marker date="1492340192390" expanded="true" signature="436:498" ph="{...}" />
+            <marker date="1492340192390" expanded="true" signature="510:1717" ph="implemented abstract members of InteractiveObject" />
+            <marker date="1492340192390" expanded="true" signature="624:778" ph="{...}" />
+            <marker date="1492340192390" expanded="true" signature="659:717" ph="{...}" />
+            <marker date="1492340192390" expanded="true" signature="837:1388" ph="{...}" />
+            <marker date="1492340192390" expanded="true" signature="1040:1219" ph="{...}" />
+            <marker date="1492340192390" expanded="true" signature="1185:1215" ph="{...}" />
+            <marker date="1492340192390" expanded="true" signature="1441:1704" ph="{...}" />
+            <marker date="1492340192390" expanded="true" signature="1625:1664" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InteractiveMovingElement.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="6" lean-forward="false" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InteractivePopup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding>
+            <marker date="1492338024821" expanded="true" signature="6:78" ph="..." />
+            <marker date="1492338024821" expanded="true" signature="130:791" ph="{...}" />
+            <marker date="1492338024821" expanded="true" signature="207:222" ph="{...}" />
+            <marker date="1492338024821" expanded="true" signature="237:362" ph="{...}" />
+            <marker date="1492338024821" expanded="true" signature="240:359" ph="/* pm = GameObject.FindGameObjectWithTag (&quot;PopupMaster&quot;).GetComponent&lt;PopupMaster&gt; (); ... */" />
+            <marker date="1492338024821" expanded="true" signature="383:421" ph="{...}" />
+            <marker date="1492338024821" expanded="true" signature="424:789" ph="implemented abstract members of InteractiveObject" />
+            <marker date="1492338024821" expanded="true" signature="538:545" ph="{...}" />
+            <marker date="1492338024821" expanded="true" signature="604:717" ph="{...}" />
+            <marker date="1492338024821" expanded="true" signature="607:714" ph="/* if (pm.OnSelectedAPopup != null) { ... */" />
+            <marker date="1492338024821" expanded="true" signature="769:776" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InteractiveRotatingElement.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="39" lean-forward="true" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TargetSelection.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="72" column="2" lean-forward="false" selection-start-line="72" selection-start-column="2" selection-end-line="72" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/SelectionControl.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="35" column="26" lean-forward="true" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TeleportToNextIsland.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ViveSetupScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TeleportInputControl.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <marker date="1492339077132" expanded="true" signature="6:78" ph="..." />
+            <marker date="1492339077132" expanded="true" signature="130:1747" ph="{...}" />
+            <marker date="1492339077132" expanded="true" signature="338:409" ph="{...}" />
+            <marker date="1492339077132" expanded="true" signature="570:839" ph="{...}" />
+            <marker date="1492339077132" expanded="true" signature="681:780" ph="{...}" />
+            <marker date="1492339077132" expanded="true" signature="893:1488" ph="{...}" />
+            <marker date="1492339077132" expanded="true" signature="918:1407" ph="{...}" />
+            <marker date="1492339077132" expanded="true" signature="1069:1403" ph="{...}" />
+            <marker date="1492339077132" expanded="true" signature="1147:1398" ph="{...}" />
+            <marker date="1492339077132" expanded="true" signature="1300:1392" ph="{...}" />
+            <marker date="1492339077132" expanded="true" signature="1508:1745" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

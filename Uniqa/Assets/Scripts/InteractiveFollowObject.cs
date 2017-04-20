@@ -1,27 +1,43 @@
-﻿using System.Collections;
+﻿using System.CodeDom;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
 public class InteractiveFollowObject : InteractiveObject {
-
-	public Transform goal;
-	public float speed = 3f;
 
 	private Vector3 offset;
 
 	private Rigidbody rb;
 
+    private List<Vector3> directions = new List<Vector3>(30);
+
 	void Start(){
 		rb = GetComponent<Rigidbody> ();
 	}
 
-	#region implemented abstract members of InteractiveObject
+    void ResetDirections()
+    {
+        for (int i = 0; i < 30; i++)
+        {
+            directions[i] = Vector3.zero;
+        }
+    }
+
+    #region implemented abstract members of InteractiveObject
 
 	public override void Interact (Vector3 targetPosition){
-		
+	    for (int i = 29; i > 0; i--)
+	    {
+	        directions[i] = directions[i - 1];
+	    }
+
+	    directions[0] = transform.position - directions[0];
 	}
 
 	public override void Initialize (Vector3 targetPosition){
+
+	    ResetDirections();
 
 		rb.velocity = Vector3.zero;
 
@@ -37,12 +53,24 @@ public class InteractiveFollowObject : InteractiveObject {
 
 		transform.SetParent (targetGO.transform);
 		rb.useGravity = false;
+	    rb.constraints = RigidbodyConstraints.FreezeAll;
+
+	    directions[0] = transform.position;
 	}
 
 	public override void End (Vector3 targetPosition) {
 		transform.SetParent (null);
 		rb.useGravity = true;
-		rb.velocity = (goal.position + (Vector3.up * speed / 2) - transform.position).normalized * speed;
+
+	    rb.constraints = RigidbodyConstraints.None;
+
+	    Vector3 direction = Vector3.zero;
+	    foreach (Vector3 v in directions)
+	    {
+	        direction += v;
+	    }
+
+		rb.velocity = direction * (1/30);
 	}
 
 	#endregion
