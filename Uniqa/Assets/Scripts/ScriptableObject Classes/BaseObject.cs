@@ -12,10 +12,16 @@ public class BaseObject : CategoryElement {
 	[SerializeField]
 	List<Color> myColors = new List<Color>();
 
-	public Color GetPreviousElement(int currentIndex){
+    public Color GetColorAt(int currentIndex)
+    {
+        return myColors[currentIndex];
+    }
+
+    public Color GetPreviousElement(int currentIndex){
 		return myColors[(currentIndex - 1 < 0 ? myColors.Count - 1 : currentIndex + 1)];
 	}
 
 	public Color GetNextElement(int currentIndex){
-		return myColors[(currentIndex + 1 > myColors.Count ? 0 : currentIndex + 1)];	}
+		return myColors[(currentIndex + 1 > myColors.Count ? 0 : currentIndex + 1)];
+	}
 }
