@@ -21,4 +21,9 @@ public class Category : CategoryElement {
 	public CategoryElement GetNextElement(int currentIndex) {
 		return categoryElements[(currentIndex + 1 > categoryElements.Count? 0 : currentIndex + 1)];
 	}
+
+    public int GetLength()
+    {
+        return categoryElements.Count;
+    }
 }

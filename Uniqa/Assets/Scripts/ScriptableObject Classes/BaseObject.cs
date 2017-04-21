@@ -24,4 +24,9 @@ public class BaseObject : CategoryElement {
 	public Color GetNextElement(int currentIndex){
 		return myColors[(currentIndex + 1 > myColors.Count ? 0 : currentIndex + 1)];
 	}
+
+    public int GetLength()
+    {
+        return myColors.Count;
+    }
 }

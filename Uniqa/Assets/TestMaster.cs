@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,28 +7,17 @@ public class TestMaster : MonoBehaviour
 
     public Category myMainCategory;
 
-    [SerializeField]
-    List<TestInfo> myTestInfo = new List<TestInfo>();
-
-    public GameObject instancedObjectPrefab;
-
 	// Use this for initialization
-	void Awake () {
-	    for (int i = 0; i < myTestInfo.Count; i++)
+	void Awake ()
+	{
+	    Category targetCategory = (myMainCategory.GetElementAt(0) as Category) as Category;
+	    BaseObject targetObject = targetCategory.GetElementAt(0) as BaseObject;
+
+	    GameObject[] gos = GameObject.FindGameObjectsWithTag("Respawn");
+
+	    foreach (GameObject go in gos)
 	    {
-	        Instantiate(instancedObjectPrefab)
-	            .GetComponent<InstancedObject>()
-	            .Initialize(myTestInfo[i].category, myTestInfo[i].objectIndex, myTestInfo[i].colorStartIndex,
-	                myTestInfo[i].yRotation);
+	        go.GetComponent<InstancedObject>().Initialize(targetCategory, 0, 0, Random.Range(0, 360));
 	    }
 	}
-}
-
-[Serializable]
-public class TestInfo
-{
-    public Category category;
-    public int objectIndex;
-    public int colorStartIndex;
-    public float yRotation;
 }

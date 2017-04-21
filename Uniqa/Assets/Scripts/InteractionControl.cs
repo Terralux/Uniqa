@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class InteractionControl : MonoBehaviour {
 
-	private bool canInteract = false;
+    [HideInInspector]
+	public bool canInteract = false;
 
-	private InteractiveObject io;
+    [HideInInspector]
+	public static InteractiveObject io;
 
 	private SteamVR_TrackedObject trackedObj;
 
@@ -17,10 +19,14 @@ public class InteractionControl : MonoBehaviour {
 	void Start(){
 		trackedObj = GetComponent<SteamVR_TrackedObject> ();
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
-		if (canInteract) {
+	    if (io == null)
+	    {
+	        return;
+	    }
+
+	    if (canInteract) {
 			if (Controller.GetHairTriggerDown ()) {
 				io.Initialize (transform.position);
 			}
@@ -39,6 +45,7 @@ public class InteractionControl : MonoBehaviour {
 		if (col.gameObject.GetComponent<InteractiveObject>() != null) {
 			canInteract = true;
 			io = col.gameObject.GetComponent<InteractiveObject> ();
+		    Debug.Log("I found an interactive object!");
 		}
 	}
 
