@@ -21,7 +21,13 @@ public class InstancedObject : MonoBehaviour
         GameObject go = Instantiate(baseObject.prefab, transform.position, Quaternion.Euler(new Vector3(0, yRotation, 0)));
         go.transform.SetParent(transform);
 
-        go.GetComponent<MeshRenderer>().material.color = baseObject.GetColorAt(colorStartindex);
+		MeshRenderer mr = go.GetComponent<MeshRenderer> ();
+		ColorCollection cc = baseObject.GetColorsAt (colorStartindex);
+
+		mr.materials[0].SetColor("_RedColorChannel", cc.redColorOverride);
+		mr.materials[0].SetColor("_GreenColorChannel", cc.greenColorOverride);
+		mr.materials[0].SetColor("_BlueColorChannel", cc.blueColorOverride);
+
         go.AddComponent<InteractiveChangableObject>();
 
         currentObjectInfo = new ObjectInfo(category, objectIndex, colorStartindex, yRotation);

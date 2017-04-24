@@ -10,18 +10,18 @@ public class BaseObject : CategoryElement {
 	public GameObject prefab;
 
 	[SerializeField]
-	List<Color> myColors = new List<Color>();
+	List<ColorCollection> myColors = new List<ColorCollection>();
 
-    public Color GetColorAt(int currentIndex)
+	public ColorCollection GetColorsAt(int currentIndex)
     {
         return myColors[currentIndex];
     }
 
-    public Color GetPreviousElement(int currentIndex){
+	public ColorCollection GetPreviousCollection(int currentIndex){
 		return myColors[(currentIndex - 1 < 0 ? myColors.Count - 1 : currentIndex + 1)];
 	}
 
-	public Color GetNextElement(int currentIndex){
+	public ColorCollection GetNextCollection(int currentIndex){
 		return myColors[(currentIndex + 1 > myColors.Count ? 0 : currentIndex + 1)];
 	}
 
@@ -29,4 +29,12 @@ public class BaseObject : CategoryElement {
     {
         return myColors.Count;
     }
+}
+
+
+[System.Serializable]
+public class ColorCollection{
+	public Color redColorOverride;
+	public Color greenColorOverride;
+	public Color blueColorOverride;
 }
