@@ -17,8 +17,7 @@ public class TeleportInputControl : MonoBehaviour {
 
     [HideInInspector]
 	public bool canTeleport = true;
-	private bool teleportEnabled = true;
-
+	public bool teleportEnabled = true;
 
 	void Awake(){
 		teleportTarget = transform.GetChild (0);
@@ -29,7 +28,6 @@ public class TeleportInputControl : MonoBehaviour {
 		}
 	}
 
-	// Update is called once per frame
 	void Update () {
 		if (!teleportEnabled) {
 			teleportTarget.position = new Vector3 (100000, 100000, 100000);

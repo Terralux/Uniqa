@@ -11,13 +11,13 @@ public class RaycastController : MonoBehaviour {
     }
 
     private TeleportInputControl teleportController;
-    //private InteractionControl interactionController;
+    private InteractionControl interactionController;
 
 	void Awake ()
 	{
 	    teleportController = GetComponent<TeleportInputControl>();
 	    trackedObj = GetComponent<SteamVR_TrackedObject> ();
-	    //interactionController = GetComponent<InteractionControl>();
+	    interactionController = GetComponent<InteractionControl>();
 	}
 
 	void Update ()
@@ -30,7 +30,7 @@ public class RaycastController : MonoBehaviour {
 
 	        if (hit.collider.gameObject.GetComponent<InteractiveObject>() == null)
 	        {
-	            if (teleportController.canTeleport)
+				if (teleportController.canTeleport && teleportController.teleportEnabled)
 	            {
 	                teleportController.SetTeleportPosition(hit.point);
 
