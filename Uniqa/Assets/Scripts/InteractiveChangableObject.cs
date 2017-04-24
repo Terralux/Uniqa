@@ -8,6 +8,8 @@ public class InteractiveChangableObject : InteractiveObject
     private InstancedObject myIOScript;
     public static GameObject currentlySelected;
 
+	private float rotationSpeedModifier = 3f;
+
     void Awake()
     {
         myIOScript = transform.parent.GetComponent<InstancedObject>();
@@ -62,7 +64,7 @@ public class InteractiveChangableObject : InteractiveObject
 
     public void Rotate(float yAxisRotation)
     {
-        transform.Rotate(new Vector3(0, yAxisRotation, 0));
+		transform.Rotate(new Vector3(0, yAxisRotation * rotationSpeedModifier, 0));
         myIOScript.SampleRotation();
     }
 }
