@@ -6,6 +6,7 @@ public class InteractiveSwitchColor : InteractiveObject {
 
     #region implemented abstract members of InteractiveObject
 
+	//Upon interactions, calls the currently selected objects changecolor method, then sets the interactive object of the interaction control to null
     public override void Interact (Vector3 targetPosition)
     {
         if (InteractiveChangableObject.currentlySelected != null)

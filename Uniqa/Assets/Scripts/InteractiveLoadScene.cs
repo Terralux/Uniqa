@@ -10,6 +10,7 @@ public class InteractiveLoadScene : InteractiveObject {
 
 	public override void Initialize (Vector3 targetPosition)
 	{
+		//utilizes the SceneManager to load a specified scene upon initialization
 		UnityEngine.SceneManagement.SceneManager.LoadScene (sceneBuildIndex);
 	}
 

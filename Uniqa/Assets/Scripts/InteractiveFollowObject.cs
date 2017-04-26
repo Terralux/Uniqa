@@ -3,19 +3,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Interactive follow object requires a Rigidbody.
+/// </summary>
 [RequireComponent(typeof(Rigidbody))]
 public class InteractiveFollowObject : InteractiveObject {
 
+	//the offset from the controller to the center of the object
 	private Vector3 offset;
 
+	//the rigidbody of the object
 	private Rigidbody rb;
 
+	//storing a list of vectors used to determine the throwing direction
     private List<Vector3> directions = new List<Vector3>(30);
 
+	//Gets the rigidbody
 	void Start(){
 		rb = GetComponent<Rigidbody> ();
 	}
 
+	/// <summary>
+	/// Resets the directions list.
+	/// </summary>
     void ResetDirections()
     {
         for (int i = 0; i < 30; i++)
@@ -26,6 +36,7 @@ public class InteractiveFollowObject : InteractiveObject {
 
     #region implemented abstract members of InteractiveObject
 
+	//As long as the players interacts, the object will keep storing new direction vectors
 	public override void Interact (Vector3 targetPosition){
 	    for (int i = 29; i > 0; i--)
 	    {
@@ -35,6 +46,8 @@ public class InteractiveFollowObject : InteractiveObject {
 	    directions[0] = transform.position - directions[0];
 	}
 
+	//This setup could use some refinements
+	//gets the closest controller, locks the rigidbody and reparents this object to the controller
 	public override void Initialize (Vector3 targetPosition){
 
 	    ResetDirections();
@@ -58,6 +71,7 @@ public class InteractiveFollowObject : InteractiveObject {
 	    directions[0] = transform.position;
 	}
 
+	//Calculates direction and launches this object
 	public override void End (Vector3 targetPosition) {
 		transform.SetParent (null);
 		rb.useGravity = true;
