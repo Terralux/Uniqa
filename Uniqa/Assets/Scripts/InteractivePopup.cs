@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Interactive popup setup from the old Kompan project, could be useful so I left it in and outcommented the code.
+/// </summary>
 public class InteractivePopup : InteractiveObject {
 
 	public GameObject objectToShow;
@@ -12,7 +15,7 @@ public class InteractivePopup : InteractiveObject {
 	}
 
 	void Start(){
-	//	pm = GameObject.FindGameObjectWithTag ("PopupMaster").GetComponent<PopupMaster> ();
+//		pm = GameObject.FindGameObjectWithTag ("PopupMaster").GetComponent<PopupMaster> ();
 	//	pm.OnSelectedAPopup += Hide;
 	}
 

@@ -7,7 +7,7 @@ public class UIHandler : MonoBehaviour
     private InteractiveChangableObject io;
     public GameObject UIPrefab;
 
-    public float offset = 1f;
+    public float offset = 2f;
 
     private bool wasPreviouslyActive = false;
 
@@ -15,6 +15,7 @@ public class UIHandler : MonoBehaviour
 
     private Transform player;
 
+	//finds the player, instantiates the UI and then hides it
     void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -22,7 +23,7 @@ public class UIHandler : MonoBehaviour
         instancedUIPrefab.SetActive(false);
     }
 
-    // Update is called once per frame
+    //in update we determine whether we began, continued, ended or didn't at all interact
 	void Update () {
 	    if (InteractiveChangableObject.currentlySelected != null)
 	    {
@@ -46,11 +47,13 @@ public class UIHandler : MonoBehaviour
 	    }
 	}
 
+	//We enable the UI on began interaction
     void BeganInteraction()
     {
         instancedUIPrefab.SetActive(true);
     }
 
+	//We track the players position and rotation in relation to the currently selected object
     void ContinousInteraction()
     {
         instancedUIPrefab.transform.position = player.transform.position +
@@ -62,6 +65,7 @@ public class UIHandler : MonoBehaviour
          player.transform.position).normalized, Vector3.up);
     }
 
+	//we disable the UI on ended interaction
     void EndedInteraction()
     {
         instancedUIPrefab.SetActive(false);
