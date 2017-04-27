@@ -1,26 +1,74 @@
 // Shader created with Shader Forge v1.36 
 // Shader Forge (c) Neat Corporation / Joachim Holmer - http://www.acegikmo.com/shaderforge/
 // Note: Manually altering this data may prevent you from opening it in Shader Forge
-/*SF_DATA;ver:1.36;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,cgin:,lico:1,lgpr:1,limd:3,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:True,hqlp:False,rprd:True,enco:False,rmgx:True,imps:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:0,bsrc:0,bdst:1,dpts:2,wrdp:True,dith:0,atcv:False,rfrpo:True,rfrpn:Refraction,coma:15,ufog:True,aust:True,igpj:False,qofs:0,qpre:1,rntp:1,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False,fsmp:False;n:type:ShaderForge.SFN_Final,id:2865,x:33688,y:32443,varname:node_2865,prsc:2|diff-394-OUT,spec-358-OUT,gloss-1813-OUT,normal-3609-RGB,amdfl-1274-RGB,amspl-1274-RGB;n:type:ShaderForge.SFN_Slider,id:358,x:33089,y:32402,ptovrint:False,ptlb:Metallic,ptin:_Metallic,varname:node_358,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0,max:1;n:type:ShaderForge.SFN_Slider,id:1813,x:33089,y:32504,ptovrint:False,ptlb:Gloss,ptin:_Gloss,varname:_Metallic_copy,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.8,max:1;n:type:ShaderForge.SFN_If,id:2035,x:32226,y:31738,varname:node_2035,prsc:2|A-2482-R,B-9885-OUT,GT-3184-RGB,EQ-8307-OUT,LT-8307-OUT;n:type:ShaderForge.SFN_Tex2d,id:2482,x:31808,y:32134,ptovrint:False,ptlb:Seperation Map,ptin:_SeperationMap,varname:node_2482,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:d7c9e259a6b79034281eafeeeacbf3e9,ntxv:0,isnm:False;n:type:ShaderForge.SFN_ValueProperty,id:9885,x:31808,y:32052,ptovrint:False,ptlb:Limit,ptin:_Limit,varname:node_9885,prsc:2,glob:False,taghide:True,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:0.5;n:type:ShaderForge.SFN_ValueProperty,id:8307,x:31808,y:32324,ptovrint:False,ptlb:Base,ptin:_Base,varname:node_8307,prsc:2,glob:False,taghide:True,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:0;n:type:ShaderForge.SFN_If,id:5807,x:32226,y:32056,varname:node_5807,prsc:2|A-2482-G,B-9885-OUT,GT-357-RGB,EQ-8307-OUT,LT-8307-OUT;n:type:ShaderForge.SFN_If,id:5932,x:32226,y:32346,varname:node_5932,prsc:2|A-2482-B,B-9885-OUT,GT-8214-RGB,EQ-8307-OUT,LT-8307-OUT;n:type:ShaderForge.SFN_Color,id:357,x:31808,y:31698,ptovrint:False,ptlb:Green Color Channel,ptin:_GreenColorChannel,varname:node_357,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0.7800978,c2:0.03633217,c3:0.8235294,c4:1;n:type:ShaderForge.SFN_Color,id:3184,x:31808,y:31532,ptovrint:False,ptlb:Red Color Channel,ptin:_RedColorChannel,varname:_RedColorChannel_copy,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0,c2:0.7867647,c3:0.003147018,c4:1;n:type:ShaderForge.SFN_Add,id:394,x:32756,y:32234,varname:node_394,prsc:2|A-5666-OUT,B-1942-OUT,C-5862-OUT;n:type:ShaderForge.SFN_Color,id:8214,x:31808,y:31865,ptovrint:False,ptlb:Blue Color Channel,ptin:_BlueColorChannel,varname:_GreenColorChannel_copy,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:1,c2:0.7655172,c3:0,c4:1;n:type:ShaderForge.SFN_AmbientLight,id:1274,x:33108,y:32777,varname:node_1274,prsc:2;n:type:ShaderForge.SFN_Tex2d,id:3609,x:33108,y:32596,ptovrint:False,ptlb:Normal Map,ptin:_NormalMap,varname:node_3609,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,ntxv:3,isnm:False;n:type:ShaderForge.SFN_Tex2d,id:878,x:32226,y:32500,ptovrint:False,ptlb:Blue Detail Map,ptin:_BlueDetailMap,varname:_DetailMap_copy,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:87bd4f8add9797748ab450ca4852a9e1,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Multiply,id:5862,x:32460,y:32388,varname:node_5862,prsc:2|A-5932-OUT,B-878-RGB;n:type:ShaderForge.SFN_Tex2d,id:5874,x:32226,y:32192,ptovrint:False,ptlb:Green Detail Map,ptin:_GreenDetailMap,varname:_DetailMap_copy_copy,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:87bd4f8add9797748ab450ca4852a9e1,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Multiply,id:1942,x:32475,y:32135,varname:node_1942,prsc:2|A-5807-OUT,B-5874-RGB;n:type:ShaderForge.SFN_Tex2d,id:8766,x:32226,y:31899,ptovrint:False,ptlb:Red Detail Map,ptin:_RedDetailMap,varname:_DetailMap_copy_copy_copy,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:87bd4f8add9797748ab450ca4852a9e1,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Multiply,id:5666,x:32475,y:31932,varname:node_5666,prsc:2|A-2035-OUT,B-8766-RGB;proporder:358-1813-2482-9885-8307-3184-357-8214-3609-8766-5874-878;pass:END;sub:END;*/
+/*SF_DATA;ver:1.36;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,cgin:,lico:1,lgpr:1,limd:3,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:True,hqlp:False,rprd:True,enco:False,rmgx:True,imps:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:0,bsrc:0,bdst:1,dpts:2,wrdp:True,dith:0,atcv:False,rfrpo:True,rfrpn:Refraction,coma:15,ufog:True,aust:True,igpj:False,qofs:0,qpre:1,rntp:1,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False,fsmp:False;n:type:ShaderForge.SFN_Final,id:2865,x:32719,y:32712,varname:node_2865,prsc:2|diff-6343-OUT,spec-358-OUT,gloss-1813-OUT,normal-5964-RGB,olwid-2834-OUT,olcol-8740-RGB;n:type:ShaderForge.SFN_Multiply,id:6343,x:32114,y:32712,varname:node_6343,prsc:2|A-7736-RGB,B-6665-RGB;n:type:ShaderForge.SFN_Color,id:6665,x:31921,y:32805,ptovrint:False,ptlb:Color,ptin:_Color,varname:_Color,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:1,c2:0.7352941,c3:0.7352941,c4:1;n:type:ShaderForge.SFN_Tex2d,id:7736,x:31921,y:32620,ptovrint:True,ptlb:Base Color,ptin:_MainTex,varname:_MainTex,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:87bd4f8add9797748ab450ca4852a9e1,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Tex2d,id:5964,x:32407,y:32978,ptovrint:True,ptlb:Normal Map,ptin:_BumpMap,varname:_BumpMap,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,ntxv:3,isnm:True;n:type:ShaderForge.SFN_Slider,id:358,x:32250,y:32780,ptovrint:False,ptlb:Metallic,ptin:_Metallic,varname:node_358,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0,max:1;n:type:ShaderForge.SFN_Slider,id:1813,x:32250,y:32882,ptovrint:False,ptlb:Gloss,ptin:_Gloss,varname:_Metallic_copy,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.8,max:1;n:type:ShaderForge.SFN_Slider,id:2834,x:32215,y:33154,ptovrint:False,ptlb:Outline Width,ptin:_OutlineWidth,varname:node_2834,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.03820958,max:1;n:type:ShaderForge.SFN_Color,id:8740,x:32293,y:33259,ptovrint:False,ptlb:Outline Color,ptin:_OutlineColor,varname:node_8740,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0.0736307,c2:0,c3:0.9705882,c4:1;proporder:5964-6665-7736-358-1813-2834-8740;pass:END;sub:END;*/
 
-Shader "Shader Forge/Uniqa Color seperator" {
+Shader "Shader Forge/Outline PBR" {
     Properties {
+        _BumpMap ("Normal Map", 2D) = "bump" {}
+        _Color ("Color", Color) = (1,0.7352941,0.7352941,1)
+        _MainTex ("Base Color", 2D) = "white" {}
         _Metallic ("Metallic", Range(0, 1)) = 0
         _Gloss ("Gloss", Range(0, 1)) = 0.8
-        _SeperationMap ("Seperation Map", 2D) = "white" {}
-        [HideInInspector]_Limit ("Limit", Float ) = 0.5
-        [HideInInspector]_Base ("Base", Float ) = 0
-        _RedColorChannel ("Red Color Channel", Color) = (0,0.7867647,0.003147018,1)
-        _GreenColorChannel ("Green Color Channel", Color) = (0.7800978,0.03633217,0.8235294,1)
-        _BlueColorChannel ("Blue Color Channel", Color) = (1,0.7655172,0,1)
-        _NormalMap ("Normal Map", 2D) = "bump" {}
-        _RedDetailMap ("Red Detail Map", 2D) = "white" {}
-        _GreenDetailMap ("Green Detail Map", 2D) = "white" {}
-        _BlueDetailMap ("Blue Detail Map", 2D) = "white" {}
+        _OutlineWidth ("Outline Width", Range(0, 1)) = 0.03820958
+        _OutlineColor ("Outline Color", Color) = (0.0736307,0,0.9705882,1)
     }
     SubShader {
         Tags {
             "RenderType"="Opaque"
+        }
+        Pass {
+            Name "Outline"
+            Tags {
+            }
+            Cull Front
+            
+            CGPROGRAM
+            #pragma vertex vert
+            #pragma fragment frag
+            #define SHOULD_SAMPLE_SH ( defined (LIGHTMAP_OFF) && defined(DYNAMICLIGHTMAP_OFF) )
+            #define _GLOSSYENV 1
+            #include "UnityCG.cginc"
+            #include "Lighting.cginc"
+            #include "UnityPBSLighting.cginc"
+            #include "UnityStandardBRDF.cginc"
+            #pragma fragmentoption ARB_precision_hint_fastest
+            #pragma multi_compile_shadowcaster
+            #pragma multi_compile LIGHTMAP_OFF LIGHTMAP_ON
+            #pragma multi_compile DIRLIGHTMAP_OFF DIRLIGHTMAP_COMBINED DIRLIGHTMAP_SEPARATE
+            #pragma multi_compile DYNAMICLIGHTMAP_OFF DYNAMICLIGHTMAP_ON
+            #pragma multi_compile_fog
+            #pragma only_renderers d3d9 d3d11 glcore gles 
+            #pragma target 3.0
+            uniform float _OutlineWidth;
+            uniform float4 _OutlineColor;
+            struct VertexInput {
+                float4 vertex : POSITION;
+                float3 normal : NORMAL;
+                float2 texcoord1 : TEXCOORD1;
+                float2 texcoord2 : TEXCOORD2;
+            };
+            struct VertexOutput {
+                float4 pos : SV_POSITION;
+                float2 uv1 : TEXCOORD0;
+                float2 uv2 : TEXCOORD1;
+                float4 posWorld : TEXCOORD2;
+                UNITY_FOG_COORDS(3)
+            };
+            VertexOutput vert (VertexInput v) {
+                VertexOutput o = (VertexOutput)0;
+                o.uv1 = v.texcoord1;
+                o.uv2 = v.texcoord2;
+                o.posWorld = mul(unity_ObjectToWorld, v.vertex);
+                o.pos = mul(UNITY_MATRIX_MVP, float4(v.vertex.xyz + v.normal*_OutlineWidth,1) );
+                UNITY_TRANSFER_FOG(o,o.pos);
+                return o;
+            }
+            float4 frag(VertexOutput i) : COLOR {
+                float3 viewDirection = normalize(_WorldSpaceCameraPos.xyz - i.posWorld.xyz);
+                return fixed4(_OutlineColor.rgb,0);
+            }
+            ENDCG
         }
         Pass {
             Name "FORWARD"
@@ -47,18 +95,11 @@ Shader "Shader Forge/Uniqa Color seperator" {
             #pragma multi_compile_fog
             #pragma only_renderers d3d9 d3d11 glcore gles 
             #pragma target 3.0
+            uniform float4 _Color;
+            uniform sampler2D _MainTex; uniform float4 _MainTex_ST;
+            uniform sampler2D _BumpMap; uniform float4 _BumpMap_ST;
             uniform float _Metallic;
             uniform float _Gloss;
-            uniform sampler2D _SeperationMap; uniform float4 _SeperationMap_ST;
-            uniform float _Limit;
-            uniform float _Base;
-            uniform float4 _GreenColorChannel;
-            uniform float4 _RedColorChannel;
-            uniform float4 _BlueColorChannel;
-            uniform sampler2D _NormalMap; uniform float4 _NormalMap_ST;
-            uniform sampler2D _BlueDetailMap; uniform float4 _BlueDetailMap_ST;
-            uniform sampler2D _GreenDetailMap; uniform float4 _GreenDetailMap_ST;
-            uniform sampler2D _RedDetailMap; uniform float4 _RedDetailMap_ST;
             struct VertexInput {
                 float4 vertex : POSITION;
                 float3 normal : NORMAL;
@@ -109,8 +150,8 @@ Shader "Shader Forge/Uniqa Color seperator" {
                 i.normalDir = normalize(i.normalDir);
                 float3x3 tangentTransform = float3x3( i.tangentDir, i.bitangentDir, i.normalDir);
                 float3 viewDirection = normalize(_WorldSpaceCameraPos.xyz - i.posWorld.xyz);
-                float4 _NormalMap_var = tex2D(_NormalMap,TRANSFORM_TEX(i.uv0, _NormalMap));
-                float3 normalLocal = _NormalMap_var.rgb;
+                float3 _BumpMap_var = UnpackNormal(tex2D(_BumpMap,TRANSFORM_TEX(i.uv0, _BumpMap)));
+                float3 normalLocal = _BumpMap_var.rgb;
                 float3 normalDirection = normalize(mul( normalLocal, tangentTransform )); // Perturbed normals
                 float3 viewReflectDirection = reflect( -viewDirection, normalDirection );
                 float3 lightDirection = normalize(_WorldSpaceLightPos0.xyz);
@@ -171,17 +212,8 @@ Shader "Shader Forge/Uniqa Color seperator" {
                 float LdotH = saturate(dot(lightDirection, halfDirection));
                 float3 specularColor = _Metallic;
                 float specularMonochrome;
-                float4 _SeperationMap_var = tex2D(_SeperationMap,TRANSFORM_TEX(i.uv0, _SeperationMap));
-                float node_2035_if_leA = step(_SeperationMap_var.r,_Limit);
-                float node_2035_if_leB = step(_Limit,_SeperationMap_var.r);
-                float4 _RedDetailMap_var = tex2D(_RedDetailMap,TRANSFORM_TEX(i.uv0, _RedDetailMap));
-                float node_5807_if_leA = step(_SeperationMap_var.g,_Limit);
-                float node_5807_if_leB = step(_Limit,_SeperationMap_var.g);
-                float4 _GreenDetailMap_var = tex2D(_GreenDetailMap,TRANSFORM_TEX(i.uv0, _GreenDetailMap));
-                float node_5932_if_leA = step(_SeperationMap_var.b,_Limit);
-                float node_5932_if_leB = step(_Limit,_SeperationMap_var.b);
-                float4 _BlueDetailMap_var = tex2D(_BlueDetailMap,TRANSFORM_TEX(i.uv0, _BlueDetailMap));
-                float3 diffuseColor = ((lerp((node_2035_if_leA*_Base)+(node_2035_if_leB*_RedColorChannel.rgb),_Base,node_2035_if_leA*node_2035_if_leB)*_RedDetailMap_var.rgb)+(lerp((node_5807_if_leA*_Base)+(node_5807_if_leB*_GreenColorChannel.rgb),_Base,node_5807_if_leA*node_5807_if_leB)*_GreenDetailMap_var.rgb)+(lerp((node_5932_if_leA*_Base)+(node_5932_if_leB*_BlueColorChannel.rgb),_Base,node_5932_if_leA*node_5932_if_leB)*_BlueDetailMap_var.rgb)); // Need this for specular when using metallic
+                float4 _MainTex_var = tex2D(_MainTex,TRANSFORM_TEX(i.uv0, _MainTex));
+                float3 diffuseColor = (_MainTex_var.rgb*_Color.rgb); // Need this for specular when using metallic
                 diffuseColor = DiffuseAndSpecularFromMetallic( diffuseColor, specularColor, specularColor, specularMonochrome );
                 specularMonochrome = 1.0-specularMonochrome;
                 float NdotV = abs(dot( normalDirection, viewDirection ));
@@ -206,7 +238,7 @@ Shader "Shader Forge/Uniqa Color seperator" {
                 specularPBL *= any(specularColor) ? 1.0 : 0.0;
                 float3 directSpecular = attenColor*specularPBL*FresnelTerm(specularColor, LdotH);
                 half grazingTerm = saturate( gloss + specularMonochrome );
-                float3 indirectSpecular = (gi.indirect.specular + UNITY_LIGHTMODEL_AMBIENT.rgb);
+                float3 indirectSpecular = (gi.indirect.specular);
                 indirectSpecular *= FresnelLerp (specularColor, grazingTerm, NdotV);
                 indirectSpecular *= surfaceReduction;
                 float3 specular = (directSpecular + indirectSpecular);
@@ -217,7 +249,6 @@ Shader "Shader Forge/Uniqa Color seperator" {
                 float nvPow5 = Pow5(1-NdotV);
                 float3 directDiffuse = ((1 +(fd90 - 1)*nlPow5) * (1 + (fd90 - 1)*nvPow5) * NdotL) * attenColor;
                 float3 indirectDiffuse = float3(0,0,0);
-                indirectDiffuse += UNITY_LIGHTMODEL_AMBIENT.rgb; // Diffuse Ambient Light
                 indirectDiffuse += gi.indirect.diffuse;
                 float3 diffuse = (directDiffuse + indirectDiffuse) * diffuseColor;
 /// Final Color:
@@ -254,18 +285,11 @@ Shader "Shader Forge/Uniqa Color seperator" {
             #pragma multi_compile_fog
             #pragma only_renderers d3d9 d3d11 glcore gles 
             #pragma target 3.0
+            uniform float4 _Color;
+            uniform sampler2D _MainTex; uniform float4 _MainTex_ST;
+            uniform sampler2D _BumpMap; uniform float4 _BumpMap_ST;
             uniform float _Metallic;
             uniform float _Gloss;
-            uniform sampler2D _SeperationMap; uniform float4 _SeperationMap_ST;
-            uniform float _Limit;
-            uniform float _Base;
-            uniform float4 _GreenColorChannel;
-            uniform float4 _RedColorChannel;
-            uniform float4 _BlueColorChannel;
-            uniform sampler2D _NormalMap; uniform float4 _NormalMap_ST;
-            uniform sampler2D _BlueDetailMap; uniform float4 _BlueDetailMap_ST;
-            uniform sampler2D _GreenDetailMap; uniform float4 _GreenDetailMap_ST;
-            uniform sampler2D _RedDetailMap; uniform float4 _RedDetailMap_ST;
             struct VertexInput {
                 float4 vertex : POSITION;
                 float3 normal : NORMAL;
@@ -305,8 +329,8 @@ Shader "Shader Forge/Uniqa Color seperator" {
                 i.normalDir = normalize(i.normalDir);
                 float3x3 tangentTransform = float3x3( i.tangentDir, i.bitangentDir, i.normalDir);
                 float3 viewDirection = normalize(_WorldSpaceCameraPos.xyz - i.posWorld.xyz);
-                float4 _NormalMap_var = tex2D(_NormalMap,TRANSFORM_TEX(i.uv0, _NormalMap));
-                float3 normalLocal = _NormalMap_var.rgb;
+                float3 _BumpMap_var = UnpackNormal(tex2D(_BumpMap,TRANSFORM_TEX(i.uv0, _BumpMap)));
+                float3 normalLocal = _BumpMap_var.rgb;
                 float3 normalDirection = normalize(mul( normalLocal, tangentTransform )); // Perturbed normals
                 float3 lightDirection = normalize(lerp(_WorldSpaceLightPos0.xyz, _WorldSpaceLightPos0.xyz - i.posWorld.xyz,_WorldSpaceLightPos0.w));
                 float3 lightColor = _LightColor0.rgb;
@@ -326,17 +350,8 @@ Shader "Shader Forge/Uniqa Color seperator" {
                 float LdotH = saturate(dot(lightDirection, halfDirection));
                 float3 specularColor = _Metallic;
                 float specularMonochrome;
-                float4 _SeperationMap_var = tex2D(_SeperationMap,TRANSFORM_TEX(i.uv0, _SeperationMap));
-                float node_2035_if_leA = step(_SeperationMap_var.r,_Limit);
-                float node_2035_if_leB = step(_Limit,_SeperationMap_var.r);
-                float4 _RedDetailMap_var = tex2D(_RedDetailMap,TRANSFORM_TEX(i.uv0, _RedDetailMap));
-                float node_5807_if_leA = step(_SeperationMap_var.g,_Limit);
-                float node_5807_if_leB = step(_Limit,_SeperationMap_var.g);
-                float4 _GreenDetailMap_var = tex2D(_GreenDetailMap,TRANSFORM_TEX(i.uv0, _GreenDetailMap));
-                float node_5932_if_leA = step(_SeperationMap_var.b,_Limit);
-                float node_5932_if_leB = step(_Limit,_SeperationMap_var.b);
-                float4 _BlueDetailMap_var = tex2D(_BlueDetailMap,TRANSFORM_TEX(i.uv0, _BlueDetailMap));
-                float3 diffuseColor = ((lerp((node_2035_if_leA*_Base)+(node_2035_if_leB*_RedColorChannel.rgb),_Base,node_2035_if_leA*node_2035_if_leB)*_RedDetailMap_var.rgb)+(lerp((node_5807_if_leA*_Base)+(node_5807_if_leB*_GreenColorChannel.rgb),_Base,node_5807_if_leA*node_5807_if_leB)*_GreenDetailMap_var.rgb)+(lerp((node_5932_if_leA*_Base)+(node_5932_if_leB*_BlueColorChannel.rgb),_Base,node_5932_if_leA*node_5932_if_leB)*_BlueDetailMap_var.rgb)); // Need this for specular when using metallic
+                float4 _MainTex_var = tex2D(_MainTex,TRANSFORM_TEX(i.uv0, _MainTex));
+                float3 diffuseColor = (_MainTex_var.rgb*_Color.rgb); // Need this for specular when using metallic
                 diffuseColor = DiffuseAndSpecularFromMetallic( diffuseColor, specularColor, specularColor, specularMonochrome );
                 specularMonochrome = 1.0-specularMonochrome;
                 float NdotV = abs(dot( normalDirection, viewDirection ));
@@ -396,17 +411,10 @@ Shader "Shader Forge/Uniqa Color seperator" {
             #pragma multi_compile_fog
             #pragma only_renderers d3d9 d3d11 glcore gles 
             #pragma target 3.0
+            uniform float4 _Color;
+            uniform sampler2D _MainTex; uniform float4 _MainTex_ST;
             uniform float _Metallic;
             uniform float _Gloss;
-            uniform sampler2D _SeperationMap; uniform float4 _SeperationMap_ST;
-            uniform float _Limit;
-            uniform float _Base;
-            uniform float4 _GreenColorChannel;
-            uniform float4 _RedColorChannel;
-            uniform float4 _BlueColorChannel;
-            uniform sampler2D _BlueDetailMap; uniform float4 _BlueDetailMap_ST;
-            uniform sampler2D _GreenDetailMap; uniform float4 _GreenDetailMap_ST;
-            uniform sampler2D _RedDetailMap; uniform float4 _RedDetailMap_ST;
             struct VertexInput {
                 float4 vertex : POSITION;
                 float2 texcoord0 : TEXCOORD0;
@@ -436,17 +444,8 @@ Shader "Shader Forge/Uniqa Color seperator" {
                 
                 o.Emission = 0;
                 
-                float4 _SeperationMap_var = tex2D(_SeperationMap,TRANSFORM_TEX(i.uv0, _SeperationMap));
-                float node_2035_if_leA = step(_SeperationMap_var.r,_Limit);
-                float node_2035_if_leB = step(_Limit,_SeperationMap_var.r);
-                float4 _RedDetailMap_var = tex2D(_RedDetailMap,TRANSFORM_TEX(i.uv0, _RedDetailMap));
-                float node_5807_if_leA = step(_SeperationMap_var.g,_Limit);
-                float node_5807_if_leB = step(_Limit,_SeperationMap_var.g);
-                float4 _GreenDetailMap_var = tex2D(_GreenDetailMap,TRANSFORM_TEX(i.uv0, _GreenDetailMap));
-                float node_5932_if_leA = step(_SeperationMap_var.b,_Limit);
-                float node_5932_if_leB = step(_Limit,_SeperationMap_var.b);
-                float4 _BlueDetailMap_var = tex2D(_BlueDetailMap,TRANSFORM_TEX(i.uv0, _BlueDetailMap));
-                float3 diffColor = ((lerp((node_2035_if_leA*_Base)+(node_2035_if_leB*_RedColorChannel.rgb),_Base,node_2035_if_leA*node_2035_if_leB)*_RedDetailMap_var.rgb)+(lerp((node_5807_if_leA*_Base)+(node_5807_if_leB*_GreenColorChannel.rgb),_Base,node_5807_if_leA*node_5807_if_leB)*_GreenDetailMap_var.rgb)+(lerp((node_5932_if_leA*_Base)+(node_5932_if_leB*_BlueColorChannel.rgb),_Base,node_5932_if_leA*node_5932_if_leB)*_BlueDetailMap_var.rgb));
+                float4 _MainTex_var = tex2D(_MainTex,TRANSFORM_TEX(i.uv0, _MainTex));
+                float3 diffColor = (_MainTex_var.rgb*_Color.rgb);
                 float specularMonochrome;
                 float3 specColor;
                 diffColor = DiffuseAndSpecularFromMetallic( diffColor, _Metallic, specColor, specularMonochrome );

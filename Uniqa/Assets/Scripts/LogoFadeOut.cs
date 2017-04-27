@@ -16,8 +16,12 @@ public class LogoFadeOut : MonoBehaviour {
 
 	private bool isFading = false;
 
+    public GameObject objectToActivateUponLogoDoneFading;
+
 	//upon awake, scans for an image or a text component on this object. then ensures synchronized fading and initiates the wait time
 	void Awake () {
+	    objectToActivateUponLogoDoneFading.SetActive(false);
+
 		myText = GetComponent<Text> ();
 		myImage = GetComponent<Image> ();
 
@@ -40,6 +44,12 @@ public class LogoFadeOut : MonoBehaviour {
 			if(myText != null) {
 				myText.color = new Color (myText.color.r, myText.color.g, myText.color.b, 1 - currentFade / collectiveFadeTime);
 			}
+
+		    if (currentFade >= collectiveFadeTime)
+		    {
+		        objectToActivateUponLogoDoneFading.SetActive(true);
+		        Destroy(this);
+		    }
 		}
 	}
 

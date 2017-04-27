@@ -20,7 +20,9 @@ public class RaycastController : MonoBehaviour {
 	//reference to interaction controller used for interacting
     //private InteractionControl interactionController;
 
-	//used to initialize the variables
+    private InteractiveLoadScene previousLoadObject;
+
+    //used to initialize the variables
 	void Awake ()
 	{
 	    teleportController = GetComponent<TeleportInputControl>();
@@ -38,40 +40,71 @@ public class RaycastController : MonoBehaviour {
 		//we do a physics raycast to see if there's something in front of the controller
 	    if (Physics.Raycast(ray, out hit, 100f))
 	    {
-			//Are we looking at an interactive object or not, handle interaction or teleportation 
+
+	        if (previousLoadObject != null)
+	        {
+	            previousLoadObject.End(Vector3.zero);
+	            previousLoadObject = null;
+	        }
+
+	        //Are we looking at an interactive object or not, handle interaction or teleportation
 	        if (hit.collider.gameObject.GetComponent<InteractiveObject>() == null)
 	        {
-				if (teleportController.teleportEnabled)
+	            if (teleportController.teleportEnabled)
 	            {
-					//we move the teleport marker to the hit position of our raycast
+	                //we move the teleport marker to the hit position of our raycast
 	                teleportController.SetTeleportPosition(hit.point);
 
-					//we check if the analog trigger is being pressed down in this frame
+	                //we check if the analog trigger is being pressed down in this frame
 	                if (Controller.GetHairTriggerDown())
 	                {
-						//teleport player to hit position
+	                    //teleport player to hit position
 	                    teleportController.MovePlayer(hit.point);
 	                }
 	            }
 	        }
 	        else
 	        {
-				//we hit an interactive object, we're trying to get the base class InteractiveObject to get it's derived class
+	            //we hit an interactive object, we're trying to get the base class InteractiveObject to get it's derived class
 	            InteractiveObject io = hit.collider.gameObject.GetComponent<InteractiveObject>();
 
-				//If the object is of the changable type, we initialize the object
+	            //If the object is of the changable type, we initialize the object
 	            if (io as InteractiveChangableObject != null)
 	            {
 	                (io as InteractiveChangableObject).Initialize(Vector3.zero);
 
-					//If the analog trigger is being pressed down in this frame
+	                //If the analog trigger is being pressed down in this frame
 	                if (Controller.GetHairTriggerDown())
 	                {
-						//we call the changable objects interact method
+	                    //we call the changable objects interact method
 	                    (io as InteractiveChangableObject).Interact(Vector3.zero);
 	                }
 	            }
+
+	            if (io as InteractiveLoadScene != null)
+	            {
+	                previousLoadObject = io as InteractiveLoadScene;
+
+	                (io as InteractiveLoadScene).Initialize(Vector3.zero);
+
+	                //If the analog trigger is being pressed down in this frame
+	                if (Controller.GetHairTriggerDown())
+	                {
+	                    //we call the changable objects interact method
+	                    (io as InteractiveLoadScene).Interact(Vector3.zero);
+	                }
+	            }
 	        }
+	    }
+	    else
+	    {
+
+	        if (previousLoadObject != null)
+	        {
+	            previousLoadObject.End(Vector3.zero);
+	            previousLoadObject = null;
+	        }
+
 	    }
 	}
 }

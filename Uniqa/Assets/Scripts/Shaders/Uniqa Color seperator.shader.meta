@@ -1,11 +1,13 @@
 fileFormatVersion: 2
 guid: 38e831a971b82cd4dae10750a9bf4a7f
-timeCreated: 1493045305
+timeCreated: 1493294778
 licenseType: Free
 ShaderImporter:
   defaultTextures:
   - _SeperationMap: {fileID: 2800000, guid: d7c9e259a6b79034281eafeeeacbf3e9, type: 3}
-  - _DetailMap: {fileID: 2800000, guid: 87bd4f8add9797748ab450ca4852a9e1, type: 3}
+  - _BlueDetailMap: {fileID: 2800000, guid: 87bd4f8add9797748ab450ca4852a9e1, type: 3}
+  - _GreenDetailMap: {fileID: 2800000, guid: 87bd4f8add9797748ab450ca4852a9e1, type: 3}
+  - _RedDetailMap: {fileID: 2800000, guid: 87bd4f8add9797748ab450ca4852a9e1, type: 3}
   userData: 
   assetBundleName: 
   assetBundleVariant: 
